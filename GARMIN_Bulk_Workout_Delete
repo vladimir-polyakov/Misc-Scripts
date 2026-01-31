@@ -3,7 +3,7 @@
 // Inspired by https://blog.trainerday.com/garmin-connect-bulk-delete-workouts-from-your-training-library-25b2991ba2e6
 
 function deleteWorkouts() {
-    const deleteWorkoutElements = document.querySelectorAll('.delete-workout');
+    const deleteWorkoutElements = document.querySelectorAll('.Menu_menuItems__eNgH5');
 
     if (deleteWorkoutElements.length === 0) {
         console.log('No more "delete-workout" elements found.');
@@ -14,7 +14,7 @@ function deleteWorkouts() {
     deleteWorkoutElements[0].click();
 
     setTimeout(() => {
-        const deleteButton = document.querySelector('a.btn.btn-primary.js-saveBtn.btn-danger');
+        const deleteButton = document.querySelector('.Button_danger__hwLq8');
         if (deleteButton) {
             deleteButton.click();
         } else {
